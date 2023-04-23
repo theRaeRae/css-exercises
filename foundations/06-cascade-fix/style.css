@@ -2,13 +2,18 @@ body{
   font-family:Arial, Helvetica, sans-serif
 }
 
+/* 
+The boldness of the two sentences.
+*/
 .para,
 .small-para {
   color: hsl(0, 0%, 0%);
   font-weight: 800;
 }
-
-.small-para {
+/*
+2nd sentence. Corrected the chain and it made the text smaller
+*/
+.para.small-para {
   font-size: 14px;
   font-weight: 800;
 }
@@ -17,7 +22,10 @@ body{
   font-size: 22px;
 }
 
-.confirm {
+/*
+Corrected the chain by using the proper way to select and using the ID
+*/
+.button.confirm#confirm-button {
   background: green;
   color: white;
   font-weight: bold;
@@ -29,7 +37,10 @@ body{
   font-size: 20px;
 }
 
-.child {
+/*
+Corrected the descendant combinator. ".text .child" corrected the last line
+*/
+.text .child {
   color: rgb(0, 0, 0);
   font-weight: 800;
   font-size: 14px;
