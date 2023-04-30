@@ -10,8 +10,14 @@ body {
 
 .header {
   background: white;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #ddd; /* shadow under the white part */
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  /* the following edits are made by me */
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+
+
 }
 
 .profile-image {
@@ -20,6 +26,7 @@ body {
   border-radius: 50%;
   width: 48px;
   height: 48px;
+  /* the following edits are made by me */
 }
 
 .logo {
@@ -27,6 +34,8 @@ body {
   font-size: 32px;
   font-weight: 900;
   font-style: italic;
+  /* the following edits are made by me */
+  margin-left: 10px;
 }
 
 button {
@@ -35,6 +44,7 @@ button {
   background: rebeccapurple;
   color: white;
   padding: 8px 24px;
+  /* the following edits are made by me */
 }
 
 a {
@@ -45,4 +55,14 @@ a {
 
 ul {
   list-style-type: none;
+  display: flex;
+  gap: 8px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.left, .right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
